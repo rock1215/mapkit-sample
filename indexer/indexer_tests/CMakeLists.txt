@@ -1,0 +1,77 @@
+project(indexer_tests)
+
+set(
+  SRC
+  bounds.hpp
+  brands_tests.cpp
+  categories_test.cpp
+  cell_coverer_test.cpp
+  cell_id_test.cpp
+  centers_table_test.cpp
+  checker_test.cpp
+  cities_boundaries_serdes_tests.cpp
+  classificator_tests.cpp
+  complex_serdes_tests.cpp
+  complex_serdes_utils_tests.cpp
+  data_source_test.cpp
+  drules_selector_parser_test.cpp
+  editable_map_object_test.cpp
+  feature_metadata_test.cpp
+  feature_names_test.cpp
+  feature_to_osm_tests.cpp
+  features_offsets_table_test.cpp
+  features_vector_test.cpp
+  index_builder_test.cpp
+  interval_index_test.cpp
+  mwm_set_test.cpp
+  postcodes_matcher_tests.cpp
+  postcodes_tests.cpp
+  rank_table_test.cpp
+  scale_index_reading_tests.cpp
+  scales_test.cpp
+  search_string_utils_test.cpp
+  sort_and_merge_intervals_test.cpp
+  string_slice_tests.cpp
+  succinct_trie_test.cpp
+  test_mwm_set.hpp
+  test_type.cpp
+  tree_node_tests.cpp
+  trie_test.cpp
+  ugc_types_test.cpp
+  visibility_test.cpp
+  wheelchair_tests.cpp
+)
+
+omim_add_test(${PROJECT_NAME} ${SRC})
+
+omim_link_libraries(
+  ${PROJECT_NAME}
+  generator_tests_support
+  search_tests_support
+  platform_tests_support
+  generator
+  search
+  routing
+  routing_common
+  indexer
+  storage
+  editor
+  platform
+  coding
+  geometry
+  base
+  stats_client
+  icu
+  jansson
+  tess2
+  protobuf
+  succinct
+  opening_hours
+  oauthcpp
+  pugixml
+  traffic
+  ${CMAKE_DL_LIBS}
+  ${LIBZ}
+)
+
+link_qt5_core(${PROJECT_NAME})

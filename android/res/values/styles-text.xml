@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <style name="MwmTextAppearance" parent="TextAppearance.AppCompat">
+    <item name="android:fontFamily" tools:ignore="NewApi">@string/robotoRegular</item>
+    <!-- Force normal textStyle. Some devices (eg Lenovo P70), uses non-normal textStyle by default. -->
+    <item name="android:textStyle">normal</item>
+  </style>
+
+  <style name="MwmTextAppearance.Display1">
+    <item name="android:textSize">@dimen/text_size_display_1</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+  </style>
+
+  <style name="MwmTextAppearance.Title">
+    <item name="android:textSize">@dimen/text_size_title</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+  </style>
+
+  <style name="MwmTextAppearance.Title.Toolbar">
+    <item name="android:textSize">@dimen/text_size_toolbar</item>
+    <item name="android:fontFamily" tools:targetApi="jelly_bean">@string/robotoMedium</item>
+  </style>
+
+  <style name="MwmTextAppearance.Headline">
+    <item name="android:textSize">@dimen/text_size_headline</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+  </style>
+
+  <style name="MwmTextAppearance.Body1" parent="TextAppearance.AppCompat.Large">
+    <item name="android:textSize">@dimen/text_size_body_1</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+  </style>
+
+  <style name="MwmTextAppearance.Body1.Secondary">
+    <item name="android:textColor">?android:textColorSecondary</item>
+  </style>
+
+  <style name="MwmTextAppearance.Body1.Light" parent="TextAppearance.AppCompat.Large.Inverse">
+    <item name="android:textColor">?android:textColorPrimaryInverse</item>
+  </style>
+
+  <style name="MwmTextAppearance.Body2" parent="TextAppearance.AppCompat.Medium">
+    <item name="android:textSize">@dimen/text_size_body_2</item>
+    <item name="android:textColor">?android:textColorSecondary</item>
+  </style>
+
+  <style name="MwmTextAppearance.Body2.Primary">
+    <item name="android:textColor">?android:textColorPrimary</item>
+  </style>
+
+  <style name="MwmTextAppearance.Body2.Light" parent="TextAppearance.AppCompat.Medium.Inverse">
+    <item name="android:textSize">@dimen/text_size_body_2</item>
+    <item name="android:textColor">?android:textColorPrimaryInverse</item>
+  </style>
+
+  <style name="MwmTextAppearance.Caption">
+    <item name="android:textSize">@dimen/text_size_caption</item>
+    <item name="android:textColor">?android:textColorSecondary</item>
+  </style>
+
+  <style name="MwmTextAppearance.Body3">
+    <item name="android:textSize">@dimen/text_size_body_3</item>
+    <item name="android:textColor">?android:textColorSecondary</item>
+  </style>
+
+  <style name="MwmTextAppearance.Body3.Primary">
+    <item name="android:textSize">@dimen/text_size_body_3</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+  </style>
+
+  <style name="MwmTextAppearance.Body3.Light" parent="TextAppearance.AppCompat.Inverse">
+    <item name="android:textSize">@dimen/text_size_body_3</item>
+    <item name="android:textColor">?android:textColorPrimaryInverse</item>
+  </style>
+
+  <style name="MwmTextAppearance.Body4" parent="TextAppearance.AppCompat.Small">
+    <item name="android:textSize">@dimen/text_size_body_4</item>
+    <item name="android:textColor">?android:textColorSecondary</item>
+  </style>
+
+  <style name="MwmTextAppearance.Body4.Light" parent="TextAppearance.AppCompat.Small.Inverse">
+    <item name="android:textSize">@dimen/text_size_body_4</item>
+    <item name="android:textColor">?android:textColorPrimaryInverse</item>
+  </style>
+
+  <style name="MwmTextAppearance.Body5">
+    <item name="android:textSize">@dimen/text_size_body_5</item>
+    <item name="android:textColor">?android:textColorSecondary</item>
+  </style>
+
+  <style name="MwmTextAppearance.Button">
+    <item name="android:textSize">@dimen/text_size_button</item>
+    <item name="android:textColor">?colorAccent</item>
+    <item name="android:textAllCaps">true</item>
+  </style>
+
+  <style name="MwmTextAppearance.Button.Red">
+    <item name="android:textColor">@color/button_red_text</item>
+  </style>
+
+  <style name="MwmTextAppearance.Toolbar">
+    <item name="android:textSize">@dimen/text_size_toolbar</item>
+    <item name="android:textColor">@color/text_light</item>
+  </style>
+
+  <style name="MwmTextAppearance.Toolbar.Search">
+    <item name="android:textColorHint">@color/text_light_hint</item>
+  </style>
+
+  <style name="MwmTextAppearance.Toolbar.Title" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+    <item name="android:textSize">@dimen/text_size_toolbar</item>
+    <item name="android:textColor">@color/text_light</item>
+    <item name="android:textColorHint">@color/text_light_hint</item>
+  </style>
+
+  <style name="MwmTextAppearance.Toolbar.Title.Light">
+    <item name="android:textColor">@color/bg_cards</item>
+  </style>
+
+  <style name="MwmTextAppearance.Toolbar.Title.Button">
+    <item name="android:textSize">@dimen/text_size_body_3</item>
+    <item name="android:textAllCaps">true</item>
+  </style>
+
+  <style name="MwmTextAppearance.RoutingNumber">
+    <item name="android:textSize">@dimen/text_size_routing_number</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="MwmTextAppearance.RoutingNumber.Navigation">
+    <item name="android:textSize">@dimen/text_size_nav_number</item>
+  </style>
+
+  <style name="MwmTextAppearance.RoutingDimension">
+    <item name="android:textSize">@dimen/text_size_routing_dimension</item>
+    <item name="android:textColor">?android:textColorSecondary</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="MwmTextAppearance.RoutingDimension.Inline" parent="MwmTextAppearance.RoutingNumber">
+    <item name="android:textSize">@dimen/text_size_routing_dimension_inline</item>
+  </style>
+
+  <style name="MwmTextAppearance.RoutingDetail">
+    <item name="android:textSize">@dimen/text_size_routing_plan_detail</item>
+    <item name="android:fontFamily" tools:ignore="NewApi">@string/robotoMedium</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+  </style>
+
+  <style name="MwmTextAppearance.RoutingDetail.Secondary">
+    <item name="android:textColor">?secondary</item>
+  </style>
+
+  <style name="MwmTextAppearance.NavStreet">
+    <item name="android:textSize">@dimen/text_size_nav_street</item>
+    <item name="android:fontFamily" tools:ignore="NewApi">@string/robotoMedium</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+  </style>
+
+  <style name="MwmTextAppearance.NavNextTurn">
+    <item name="android:textSize">@dimen/text_size_nav_next_turn</item>
+    <item name="android:fontFamily" tools:ignore="NewApi">@string/robotoMedium</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">?android:textColorPrimaryInverse</item>
+  </style>
+
+  <style name="MwmTextAppearance.NavNextTurn.Exit">
+    <item name="android:textSize">@dimen/text_size_nav_circle_exit</item>
+  </style>
+
+  <style name="MwmTextAppearance.PlacePage" parent="MwmTextAppearance.Body1"/>
+
+  <style name="MwmTextAppearance.PlacePage.Accent">
+    <item name="android:textColor">?colorAccent</item>
+  </style>
+
+  <style name="MwmTextAppearance.PlacePage.Title" parent="MwmTextAppearance.Body3"/>
+
+  <style name="MwmTextAppearance.Editor">
+  </style>
+
+  <style name="MwmTextAppearance.Editor.Buttons">
+    <item name="android:textSize">@dimen/text_size_body_3</item>
+  </style>
+
+  <style name="MwmTextAppearance.Banner" parent="MwmTextAppearance.Body4">
+    <item name="android:textSize">@dimen/text_size_banner</item>
+    <item name="android:textAllCaps">true</item>
+    <item name="android:textColor">?bannerText</item>
+  </style>
+
+  <style name="MwmTextAppearance.Tab" parent="MwmTextAppearance.Body3">
+    <item name="android:textAllCaps">true</item>
+    <item name="android:textColor">@color/white_secondary</item>
+  </style>
+
+  <style name="MwmTextAppearance.Discovery.Subtitle" parent="MwmTextAppearance.Body3">
+    <item name="android:fontFamily" tools:targetApi="jelly_bean">@string/robotoMedium</item>
+    <item name="android:gravity">start</item>
+  </style>
+
+  <style name="MwmTextAppearance.Discovery.Item.Title" parent="MwmTextAppearance.Body3.Primary">
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="MwmTextAppearance.Discovery.Item.Button" parent="MwmTextAppearance.Body3.Primary">
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">?colorAccent</item>
+    <item name="android:textAllCaps">true</item>
+  </style>
+
+  <style name="MwmTextAppearance.Discovery.Item.Distance" parent="MwmTextAppearance.Body3.Primary">
+    <item name="android:textColor">?colorAccent</item>
+  </style>
+
+  <style name="MwmTextAppearance.BookingFilter.Title" parent="MwmTextAppearance.Body3">
+    <item name="android:fontFamily" tools:targetApi="jelly_bean">@string/robotoMedium</item>
+  </style>
+
+  <style name="MwmTextAppearance.BookingFilter.Warning" parent="MwmTextAppearance.Body3">
+    <item name="android:fontFamily" tools:ignore="NewApi">@string/robotoRegular</item>
+    <item name="android:textColor">@color/dark_gray</item>
+  </style>
+
+  <style name="MwmTextAppearance.BookingFilter.DateTextView" parent="MwmTextAppearance.Body3">
+    <item name="android:singleLine">true</item>
+    <item name="android:ellipsize">end</item>
+    <item name="android:paddingLeft">@dimen/margin_half</item>
+    <item name="android:paddingRight">@dimen/margin_half</item>
+    <item name="android:paddingTop">@dimen/margin_half_plus_eight</item>
+    <item name="android:paddingBottom">@dimen/margin_half_plus_eight</item>
+    <item name="android:gravity">start|center_vertical</item>
+    <item name="android:textColor">?attr/filterPropertyTextColor</item>
+    <item name="android:background">?filterPropertyBackground</item>
+  </style>
+
+  <style name="Headline.H6" parent="TextAppearance.AppCompat.Title">
+    <item name="android:textSize">@dimen/text_size_h6_headline</item>
+  </style>
+  <style name="Headline.H5" parent="TextAppearance.AppCompat.Headline">
+    <item name="android:textSize">@dimen/text_size_h5_headline</item>
+  </style>
+  <style name="Headline.H4" parent="TextAppearance.AppCompat.Display1">
+    <item name="android:textSize">@dimen/text_size_h4_headline</item>
+  </style>
+  <style name="Headline.H3" parent="TextAppearance.AppCompat.Display2">
+    <item name="android:textSize">@dimen/text_size_h3_headline</item>
+  </style>
+  <style name="Headline.H2" parent="TextAppearance.AppCompat.Display3">
+    <item name="android:textSize">@dimen/text_size_h2_headline</item>
+  </style>
+  <style name="Headline.H1" parent="TextAppearance.AppCompat.Display4">
+    <item name="android:textSize">@dimen/test_size_h1_headline</item>
+  </style>
+</resources>

@@ -1,0 +1,192 @@
+# Please use android/.gitignore for all Android stuff
+
+syntax: glob
+*~
+.DS_Store
+Makefile
+Makefile.Debug
+Makefile.Release
+object_script.*.Debug
+object_script.*.Release
+compile_commands.json
+
+stxxl.errlog
+stxxl.log
+screenlog.0
+data/*.mwm.osm2ft
+data/*.mwm.routing
+data/*.mwmmeta
+data/[!W]*.mwm
+data/local_ads*.dat
+data/local_ads_*/*.*
+data/shaders_compiler/*
+data/styles/*/*/out/*
+data/resources-*_design/*
+data/drules_proto_design.bin
+data/colors_design.txt
+data/patterns_design.txt
+data/route_points.dat
+data/bookmarks/
+data/bookmarks_backup/
+data/vulkan_shaders/debug/*
+
+# Compiled Python
+*.pyc
+
+# Symbian
+.obj/*
+*.mmp
+*.cache
+*.inf
+*.loc
+*.rss
+*.pkg
+*.d
+
+# Windows generated files
+*.vcxproj*
+ipch/*
+omim.sdf
+*.vcproj
+*.icproj
+*.sln
+*.idb
+*.user
+*.pro.user*
+*.ncb
+*.suo
+*.aps
+*.rc
+!qt/res/windows.rc
+*.pdb
+out/*
+qt/mapswithme.log
+
+# XCode
+iphone/*/*.xcodeproj/*.pbxuser
+iphone/*/*.xcodeproj/*.perspectivev3
+iphone/*/*.xcodeproj/project.xcworkspace/*
+iphone/*/build/*
+tools/emacsmode/build
+**/DerivedData/*
+**/xcshareddata
+**/xcuserdata
+**/xcschemes
+iphone/**/*.moved-aside
+iphone/**/*.swp
+iphone/**/*.mode1v3
+iphone/**/*.mode2v3
+iphone/**/*.perspectivev3
+
+# Carthage
+iphone/Maps/3party/Carthage/Checkouts
+iphone/Maps/3party/Carthage/Build/Mac/*.bcsymbolmap
+iphone/Maps/3party/Carthage/Build/Mac/*.dSYM
+iphone/Maps/3party/Carthage/Build/tvOS
+iphone/Maps/3party/Carthage/Build/watchOS
+iphone/Maps/3party/Carthage/Build/iOS/*.bcsymbolmap
+iphone/Maps/3party/Carthage/Build/iOS/*.dSYM
+iphone/Maps/3party/Carthage/Build/*.version
+
+# GeneratedFiles
+version/version.hpp
+tools/win/MapsWithMe*
+GeneratedFiles
+
+# data
+data/intermediate_data
+data/[0-9][0-9][0-9][0-9][0-9][0-9]
+data/gps_track.dat
+# temporary files for downloader
+data/*.mwm.downloading2
+data/*.mwm.resume2
+data/*.ready
+# data folder on server stores different planet files
+data/*.osm
+data/*.bz2
+data/settings.ini
+!data/minsk-pass.mwm
+!data/minsk-pass.osm.bz2
+data/index.idx
+data/index.stamp
+# local statistics storage
+data/stats
+# generated routing indices
+data/*/*.bftsegbits
+data/*/*.bftsegnodes
+data/*/*.offsets
+# metrics
+data/metric/*
+# notifications
+data/notifications/*
+
+# benchmark results
+data/benchmarks/*.trace
+data/benchmarks/iphone3g/*
+data/benchmarks/ipod4/*
+data/benchmarks/ipad/*
+data/benchmarks/mac/*
+data/benchmarks/kindle-fire/*
+data/benchmarks/galaxy-s-2/*
+data/benchmarks/ipad3/*
+data/benchmarks/ipad2/*
+data/benchmarks/iphone5/*
+data/benchmarks/maps/*
+
+qtc_packaging
+
+tools/twine/.git
+
+# shader preprocessing moc files
+drape/shader_def.hpp
+drape/shader_def.cpp
+drape_frontend/shader_def.hpp
+drape_frontend/shader_def.cpp
+drape_frontend/drape_frontend_tests/shader_def_for_tests.hpp
+drape_frontend/drape_frontend_tests/shader_def_for_tests.cpp
+
+tizen/*/Debug/*
+tizen/*/.*
+!tizen/*/.cproject
+!tizen/*/.project
+
+3party/osrm/osrm-backend/util/fingerprint_impl.hpp
+3party/osrm/osrm-backend/util/git_sha.cpp
+3party/osrm/osrm-backend/build/
+
+tizen/*/crash-info/*
+.idea/*
+.idea
+
+# Private repository files.
+.private_repository_url
+.private_repository_branch
+private.h
+routing_common/car_model_coefs.hpp
+tools/android/mapswithme.keystore
+tools/android/yota.keystore
+android/secure.properties
+android/fabric.properties
+android/pushwoosh.properties
+android/libnotify.properties
+android/res/values/google-service.xml
+server
+
+*.li
+
+*.autosave
+
+cmake-build-*
+
+qt/res/Info.plist
+
+designer_version.h
+
+# Vim files
+*.sw?
+
+# Build version
+build_version.hpp
+
+# Configs
+tools/python/maps_generator/var/etc/map_generator.ini

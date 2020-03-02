@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="MwmTheme.Menu"/>
+  <style name="MwmTheme.Menu.Line"/>
+  <style name="MwmTheme.Menu.Content"/>
+
+  <style name="MwmTheme.Menu.Line.Button">
+    <item name="android:layout_width">@dimen/menu_line_button_width</item>
+    <item name="android:layout_height">@dimen/menu_line_height</item>
+    <item name="android:scaleType">centerInside</item>
+    <item name="android:background">@drawable/menu_button</item>
+    <item name="android:tint">?iconTint</item>
+  </style>
+
+  <style name="MwmTheme.Menu.Line.Button.Toggle">
+    <item name="android:layout_width">@dimen/menu_line_button_width_edge</item>
+    <item name="android:layout_height">@dimen/menu_line_height</item>
+    <item name="android:layout_gravity">right</item>
+    <item name="android:paddingLeft">@dimen/margin_half_plus</item>
+    <item name="android:paddingRight">@dimen/margin_half</item>
+    <item name="android:src">@drawable/ic_menu_close</item>
+    <item name="android:background">@drawable/menu_button_right</item>
+    <item name="android:tint">@null</item>
+  </style>
+
+  <style name="MwmTheme.Menu.Content.ListItem"
+         parent="MwmTextAppearance.Body1">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/menu_list_item_height</item>
+    <item name="android:padding">@dimen/margin_half</item>
+    <item name="android:drawablePadding">@dimen/margin_base</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:background">?clickableBackground</item>
+    <item name="android:singleLine">true</item>
+  </style>
+
+  <style name="MwmTheme.Menu.Content.GridItem">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:background">?clickableBackground</item>
+  </style>
+
+  <style name="MwmTheme.Menu.Content.GridItem.Text">
+    <item name="android:textSize">@dimen/text_size_icon_title</item>
+    <item name="android:gravity">center_horizontal</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+    <item name="android:drawablePadding">0dp</item>
+    <item name="android:paddingTop">@dimen/margin_half</item>
+    <item name="android:paddingBottom">@dimen/margin_half</item>
+  </style>
+</resources>

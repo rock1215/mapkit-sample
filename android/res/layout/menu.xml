@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:clickable="true"
+  android:visibility="invisible"
+  tools:visibility="visible">
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Space
+      android:id="@+id/animation_spacer"
+      android:layout_width="0dp"
+      android:layout_height="0dp"/>
+
+    <FrameLayout
+      android:id="@+id/line_frame"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <ImageView
+        android:id="@+id/toggle"
+        style="@style/MwmTheme.Menu.Line.Button.Toggle"
+        tools:layout_marginTop="60dp"/>
+
+      <include
+        android:id="@+id/buttons_frame"
+        layout="@layout/menu_buttons_line"/>
+
+      <include
+        android:id="@+id/routing_plan_frame"
+        layout="@layout/menu_route_plan_line"
+        tools:layout_width="match_parent"
+        tools:layout_height="@dimen/menu_line_height"
+        tools:layout_marginTop="60dp"/>
+
+      <include
+        android:id="@+id/routing_action_frame"
+        layout="@layout/routing_action_panel"
+        android:visibility="gone"
+        tools:layout_width="match_parent"
+        tools:layout_height="wrap_content"
+        tools:layout_marginTop="60dp"/>
+    </FrameLayout>
+  </LinearLayout>
+
+  <FrameLayout
+    android:id="@+id/content_frame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="invisible"
+    tools:visibility="visible">
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/divider"/>
+
+    <include
+      layout="@layout/menu_content"/>
+  </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,155 @@
+project(map)
+
+include_directories(
+  ${OMIM_ROOT}/3party/protobuf/protobuf/src
+  ${OMIM_ROOT}/3party/freetype/include
+  ${OMIM_ROOT}/3party/jansson/src
+  ${OMIM_ROOT}/3party/glm
+)
+
+set(
+  SRC
+  api_mark_point.cpp
+  api_mark_point.hpp
+  benchmark_tools.hpp
+  benchmark_tools.cpp
+  booking_availability_filter.cpp
+  booking_availability_filter.hpp
+  booking_filter.hpp
+  booking_filter_cache.cpp
+  booking_filter_cache.hpp
+  booking_filter_params.hpp
+  booking_filter_processor.cpp
+  booking_filter_processor.hpp
+  bookmark.cpp
+  bookmark.hpp
+  bookmark_catalog.cpp
+  bookmark_catalog.hpp
+  bookmark_helpers.cpp
+  bookmark_helpers.hpp
+  bookmark_manager.cpp
+  bookmark_manager.hpp
+  bookmarks_search_params.hpp
+  caching_address_getter.hpp
+  catalog_headers_provider.cpp
+  catalog_headers_provider.hpp
+  chart_generator.cpp
+  chart_generator.hpp
+  cloud.cpp
+  cloud.hpp
+  discovery/discovery_client_params.hpp
+  discovery/discovery_manager.cpp
+  discovery/discovery_manager.hpp
+  discovery/discovery_search.cpp
+  discovery/discovery_search.hpp
+  discovery/discovery_search_params.hpp
+  displacement_mode_manager.cpp
+  displacement_mode_manager.hpp
+  displayed_categories_modifiers.cpp
+  displayed_categories_modifiers.hpp
+  everywhere_search_callback.cpp
+  everywhere_search_callback.hpp
+  everywhere_search_params.hpp
+  extrapolation/extrapolator.cpp
+  extrapolation/extrapolator.hpp
+  features_fetcher.cpp
+  features_fetcher.hpp
+  framework.cpp
+  framework.hpp
+  framework_light.cpp
+  framework_light.hpp
+  framework_light_delegate.hpp
+  gps_track_collection.cpp
+  gps_track_collection.hpp
+  gps_track_filter.cpp
+  gps_track_filter.hpp
+  gps_track_storage.cpp
+  gps_track_storage.hpp
+  gps_track.cpp
+  gps_track.hpp
+  gps_tracker.cpp
+  gps_tracker.hpp
+  isolines_manager.cpp
+  isolines_manager.hpp
+  local_ads_manager.cpp
+  local_ads_manager.hpp
+  local_ads_mark.cpp
+  local_ads_mark.hpp
+  local_ads_supported_types.cpp
+  mwm_url.cpp
+  mwm_url.hpp
+  notifications/notification_manager.cpp
+  notifications/notification_manager.hpp
+  notifications/notification_manager_delegate.cpp
+  notifications/notification_manager_delegate.hpp
+  notifications/notification_queue.cpp
+  notifications/notification_queue.hpp
+  notifications/notification_queue_serdes.cpp
+  notifications/notification_queue_serdes.hpp
+  notifications/notification_queue_storage.cpp
+  notifications/notification_queue_storage.hpp
+  onboarding.cpp
+  onboarding.hpp
+  place_page_info.cpp
+  place_page_info.hpp
+  position_provider.hpp
+  power_management/power_manager.cpp
+  power_management/power_manager.hpp
+  power_management/power_management_schemas.cpp
+  power_management/power_management_schemas.hpp
+  promo_catalog_poi_checker.hpp
+  promo_delegate.cpp
+  promo_delegate.hpp
+  purchase.cpp
+  purchase.hpp
+  reachable_by_taxi_checker.cpp
+  reachable_by_taxi_checker.hpp
+  routing_manager.cpp
+  routing_manager.hpp
+  routing_mark.cpp
+  routing_mark.hpp
+  search_api.cpp
+  search_api.hpp
+  search_mark.cpp
+  search_mark.hpp
+  search_product_info.hpp
+  taxi_delegate.cpp
+  taxi_delegate.hpp
+  tips_api.cpp
+  tips_api.hpp
+  tips_api_delegate.cpp
+  tips_api_delegate.hpp
+  track.cpp
+  track.hpp
+  traffic_manager.cpp
+  traffic_manager.hpp
+  transit/transit_display.cpp
+  transit/transit_display.hpp
+  transit/transit_reader.cpp
+  transit/transit_reader.hpp
+  user.cpp
+  user.hpp
+  user_mark_id_storage.cpp
+  user_mark_id_storage.hpp
+  user_mark_layer.cpp
+  user_mark_layer.hpp
+  user_mark.cpp
+  user_mark.hpp
+  utils.cpp
+  utils.hpp
+  viewport_search_params.hpp
+  viewport_search_callback.cpp
+  viewport_search_callback.hpp
+)
+
+omim_add_library(${PROJECT_NAME} ${SRC})
+
+omim_add_test_subdirectory(map_integration_tests)
+omim_add_test_subdirectory(map_tests)
+omim_add_test_subdirectory(mwm_tests)
+omim_add_test_subdirectory(style_tests)
+
+if (PLATFORM_DESKTOP)
+  add_subdirectory(benchmark_tool)
+  add_subdirectory(extrapolation_benchmark)
+endif()
